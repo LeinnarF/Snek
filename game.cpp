@@ -27,7 +27,7 @@ void Game::GameOver()
 	snake.Reset();
 	food.position = food.GenerateRandomPosition(snake.body);
 	running = false;
-
+	score = 0;
 }
 
 void Game::CheckCollisionWithFood()
@@ -36,6 +36,7 @@ void Game::CheckCollisionWithFood()
 	{
 		food.position = food.GenerateRandomPosition(snake.body);
 		snake.addSegment = true;
+		score++;
 	}
 }
 

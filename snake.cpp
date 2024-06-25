@@ -1,13 +1,13 @@
 #include "snake.hpp"
 
-std::deque<Vector2> Snake::body = { {12, 12} };
+std::deque<Vector2> Snake::body = { {12, 12 } };
 Vector2 Snake::direction = { 1,0 };
 
 void Snake::Draw()
 {
 	for (const auto& segment : body)
 	{
-		DrawRectangle(static_cast<int>(segment.x * 30), static_cast<int>(segment.y * 30), 30, 30, GRAY);
+		DrawRectangle(static_cast<int>(75 + segment.x * 30), static_cast<int>(75 + segment.y * 30), 30, 30, GRAY);
 	}
 }
 

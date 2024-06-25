@@ -12,7 +12,7 @@ Food::Food(std::deque<Vector2> snakeBody)
 
 void Food::Draw()
 {
-	DrawRectangle(static_cast<int>(position.x * 30), static_cast<int> (position.y * 30), 30, 30, RED); // typecast to int
+	DrawRectangle(static_cast<int>(75 + position.x * 30), static_cast<int> (75 + position.y * 30), 30, 30, RED); // typecast to int
 }
 
 

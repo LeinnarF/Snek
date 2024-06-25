@@ -9,6 +9,7 @@ class Game
 {
 public:
 	bool running = true;
+	int score = 0;
 	Snake snake;
 	Food food = Food(snake.body);
 	void Draw();
