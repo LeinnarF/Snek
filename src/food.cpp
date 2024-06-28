@@ -33,6 +33,5 @@ Vector2 Food::GenerateRandomPosition(std::deque<Vector2> snakeBody)
 		position = GenerateRandomCell();
 	}
 	return position;
-
 }
 

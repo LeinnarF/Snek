@@ -25,18 +25,12 @@ void Snake::Update()
 			// Calculate new head position based on the current direction
 			Vector2 newHead = Vector2Add(body.front(), direction);
 
-			// Here, you might want to add additional game logic to handle boundaries or collisions
 
 			// Update the snake's body
 			body.pop_back(); // Remove the last segment of the snake's body
 
 			// Safely add the new head segment to the front
 			body.push_front(newHead);
-		}
-		else
-		{
-			// Handle the case when the snake's body is empty
-			// This could involve resetting the game or snake, or displaying a message, etc.
 		}
 	}
 }
@@ -65,5 +59,4 @@ void Snake::Reset()
 {
 	body = { Vector2{12, 12} };
 	direction = { 1, 0 };
-
 }

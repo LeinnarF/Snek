@@ -127,17 +127,17 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="food.cpp" />
-    <ClCompile Include="game.cpp" />
-    <ClCompile Include="main.cpp" />
-    <ClCompile Include="snake.cpp" />
+    <ClCompile Include="src\food.cpp" />
+    <ClCompile Include="src\game.cpp" />
+    <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\snake.cpp" />
     <ClCompile Include="utils.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="food.hpp" />
-    <ClInclude Include="game.hpp" />
-    <ClInclude Include="snake.hpp" />
-    <ClInclude Include="utils.hpp" />
+    <ClInclude Include="headers\food.hpp" />
+    <ClInclude Include="headers\game.hpp" />
+    <ClInclude Include="headers\snake.hpp" />
+    <ClInclude Include="headers\utils.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
